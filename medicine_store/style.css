@@ -1,0 +1,110 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 2px 5px gray;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 6px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav .search-container {
+    float: right;
+}
+  
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    box-shadow: 2px 2px 5px gray inset;
+}
+
+@media only screen and (max-width: 380px) {
+    .topnav input[type=text] {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .topnav input[type=text] {
+        width: 150px;
+    }
+}
+  
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+
+
+#container {
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(162, 235, 138);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.id {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:600px) {
+    .id {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .id {
+        font-size: 13px;
+    }
+    .card > img {
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .id {
+        font-size: 11px;
+    }
+    .card > img {
+        height: 70px;
+    }
+}
+
+.id > p {
+    margin: 5px 0px;
+}

@@ -1,0 +1,43 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 2px 5px gray;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 6px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.path-region:hover {
+    stroke: red;
+    stroke-width: 2px;
+}
+
+#cont {
+    overflow: overlay;
+    text-align: center;
+}
+
+#cont > img {
+    margin: auto;
+}
+
+#statename {
+    font-size: 40px;
+    color: brown;
+    font-weight: 800;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Corona Virus Scan</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/containers.css">
+	<link rel="stylesheet" href="css/meter.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/style_main.css">
+</head>
+<body onload="bodyload()">
+	
+	<nav>
+		<li><img id="brand-logo" src="amour.png" height=50px></li>
+		<li>Covid 19 Digital screening</li>
+	</nav>
+	<div id="overlay"><button class="w3-button w3-black" onclick="loads(0)">I am staying Home<br>I am staying safe</button></div>
+	<div id="main-container">
+		<div class="container server">
+			<p class="question"></p>
+			</div>
+			
+			<!-- Age -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict1"></p>
+				<p class="predict1"></p>
+				<p class="predict1"></p>
+				<p class="predict1"></p>
+			</div>
+			<div class="container client">
+				<p id="client1"></p>
+			</div>
+			
+			<!-- Gender -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict2"></p>
+				<p class="predict2"></p>
+				<p class="predict2"></p>
+			</div>
+			<div class="container client">
+				<p id="client2"></p>
+			</div>
+			
+			<!-- Temperature -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict3"></p>
+				<p class="predict3"></p>
+				<p class="predict3"></p>
+			</div>
+			<div class="container client">
+				<p id="client3"></p>
+			</div>
+			
+			<!-- Symptoms 1 -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict4"></p>
+				<p class="predict4"></p>
+				<p class="predict4"></p>
+				<p class="predict4"></p>
+				<p class="predict4"></p>
+				<p class="predict4"></p>
+				<p class="p4 confirm" style="background-color: #f66; color:white">Confirm</p>
+			</div>
+			<div class="container client">
+				<p id="client4"></p>
+			</div>
+			
+			<!-- Symptoms 2 -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict5"></p>
+				<p class="predict5"></p>
+				<p class="predict5"></p>
+				<p class="predict5"></p>
+				<p class="predict5"></p>
+				<p class="predict5"></p>
+				<p class="predict5"></p>
+				<p class="p5 confirm" style="background-color: #f66; color:white">Confirm</p>
+			</div>
+			<div class="container client">
+				<p id="client5"></p>
+			</div>
+			
+			<!-- Travel History -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict6"></p>
+				<p class="predict6"></p>
+				<p class="predict6"></p>
+				<p class="predict6"></p>
+			</div>
+			<div class="container client">
+				<p id="client6"></p>
+			</div>
+			
+			<!-- History of diseases -->
+			<div class="container server">
+				<p class="question"></p>
+			</div>
+			<div class="predict-container">
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="predict7"></p>
+				<p class="p7 confirm" style="background-color: #f66; color:white">Confirm</p>
+			</div>
+			<div class="container client">
+				<p id="client7"></p>
+			</div>
+			
+			<div class="container server" id="wave">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			
+		</div>
+		
+		<!-- MODAL -->
+		<div id="myModal" class="modal">
+			
+			<!-- Modal content -->
+			<div class="modal-content">
+					<span class="close">&times;</span>
+					<div>
+							<p style="font-size:30px;">Risk analysis</p>
+
+							<!-- THE METER -->
+							<div id="wrapper">
+									<svg id="meter">
+											<circle id="outline_curves" class="circle outline" 
+											cx="50%" cy="50%"></circle>
+											
+											<circle id="low" class="circle range" cx="50%" cy="50%"
+											stroke="green"></circle>
+											
+											<circle id="avg" class="circle range" cx="50%" cy="50%"
+											stroke="rgb(254,218,9)"></circle>
+											
+											<circle id="high" class="circle range" cx="50%" cy="50%"
+											stroke="red"></circle>
+											
+											<circle id="mask" class="circle" cx="50%" cy="50%" >
+											</circle>
+											
+											<circle id="outline_ends" class="circle outline"
+											cx="50%" cy="50%"></circle>
+									</svg>
+									<img id="meter_needle" alt="">
+									<label id="lbl" id="value" for=""></label>
+							</div>
+							<p id="risk" style="text-align: center;"></p>
+					</div>
+			</div>
+		</div>
+
+		<div id="reset" onclick="reset()"></div>
+		
+		
+		<script src="js/chat.js"></script>
+		<script src="js/meter.js"></script>
+		<script src="js/modal.js"></script>
+	</body>
+	</html>

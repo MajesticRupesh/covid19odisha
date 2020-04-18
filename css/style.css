@@ -1,0 +1,430 @@
+hr {
+    background-color: #000;
+}
+
+#showcase {
+    top: 0;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    /*background: url("https://www.xmple.com/wallpaper/gradient-blue-white-linear-1920x1080-c2-ffffff-add8e6-a-90-f-14.svg") no-repeat ;*/
+    transform: rotate(180deg);
+    text-align: center;
+    color: #000;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-content {
+    transform: rotate(180deg);
+}
+
+#showcase > .container {
+    width: auto;
+    text-align: center;
+    align-items: center;
+    padding: 0px 5px;
+    margin-bottom: -20px;
+}
+
+#showcase > .container > .inner-content {
+    float: right;
+}
+
+#showcase > .container >img {
+    transform: rotate(180deg);
+    float:left;
+    width:45%;
+}
+
+@media only screen and (max-width: 600px) {
+    #showcase > .container >img {
+        width: 60%;
+    }
+    #showcase {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #showcase > .container >img {
+        width: 50%;
+    }
+    #showcase {
+        width: 100%;
+    }
+}
+
+.button {
+    margin-top: 20px;
+    color: black;
+    padding: 2px 0px;
+}
+
+.button > a {
+    background-color: black;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    font-size: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 5px 2px white;
+    border-radius: 10px;
+}
+
+.button > a:hover {
+    transition: 0.2s;
+    padding: 7px 12px;
+}
+
+.button > a:active {
+    transition: 0s;
+    padding: 4px 8px;
+}
+
+#tracker {
+    text-align: center;
+    align-items: center;
+}
+
+#tracker > div {
+    display: block;
+    
+    margin: auto;
+    height: 40px;
+}
+
+#tracker > div:nth-child(1) {
+    text-align: center;
+}
+#tracker > div:nth-child(2) {
+    text-align: center;
+}
+#tracker > div:nth-child(3) {
+    text-align: left;
+}
+
+#tracker > div > h2 {
+    float: left;
+    width: 25%;
+}
+
+@media only screen and (max-width: 650px) {
+    .word > h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .word > h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .word > h2 {
+        font-size: 1.1em;
+    }
+}
+
+
+#district-section {
+    width: 100%;
+    text-align: center;
+    
+    top: -20px;
+}
+
+#district-accordion {
+    width: 95%;
+    background-color:  rgb(144, 199, 250);
+    text-align: center;
+}
+#district-accordion:hover, #district-accordion:active {
+    background-color:  rgb(61, 160, 253);
+}
+
+#district-panel {
+    background-color: #ede7f0;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+#district-table {
+    margin: 0 auto;
+}
+#district-table > tbody > tr > th {
+    border: 2px solid brown;
+}
+#district-table > tbody > tr > td {
+    border: 2px solid brown;
+}
+
+
+#odishahelpline {
+    width: 100%;
+    text-align: center;
+}
+
+#odishahelpline > button {
+    background: royalblue;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    outline: none;
+    border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #odishahelpline > button {
+        padding: 10px 10px;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #odishahelpline > button {
+        padding: 10px 5px;
+        font-size: 17px;
+    }
+}
+
+#moredetails {
+    width: 100%;
+}
+
+#more-accordion {
+    width:95%;
+    background-color:  rgb(144, 199, 250);
+}
+#more-accordion:hover, #more-accordion:active {
+    background-color:  rgb(61, 160, 253);
+}
+#more-accordion-panel {
+    background-color: rgb(203,234,255);
+}
+
+
+
+#specialist {
+    width: 100%;
+    text-align: center;
+}
+
+#specialistpage > button {
+    background: rgb(255,70,70);
+    padding: 10px 11px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    outline: none;
+    border: 0;
+}
+
+#specialistpage > button:hover {
+    background: rgb(235,50,50);
+}
+
+
+#medicinestores > button {
+    background: rgb(52, 204, 2);
+    padding: 10px 4px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    outline: none;
+    border: 0;
+}
+
+#medicinestores > button:hover {
+    background: rgb(43, 165, 2);
+}
+
+
+#precautions {
+    width: 100%;
+    text-align: center;
+}
+
+
+#panic > p {
+    padding: 10px;
+    background: rgb(227,226,243);
+    font-size: 30px;
+    color: rgb(60,54,173);
+}
+
+@media only screen and (max-width: 450px) {
+    #panic > p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #panic > p {
+        font-size: 18px;
+    }
+}
+
+.points {
+    text-align: left;
+    padding: 2px 50px;
+}
+
+.accordion {
+    font-size: 23px;
+    padding: 0px 5px;
+}
+
+#accordian1 {
+    background-color:  rgb(183, 214, 255);
+}
+#accordian1:hover {
+    background-color:  rgb(140, 189, 255);
+}
+
+#accordian2 {
+    background-color:  rgb(183, 214, 255);
+}
+#accordian2:hover {
+    background-color:  rgb(140, 189, 255);
+}
+
+
+.accordion:focus {
+    outline: none;
+}
+
+#panel1 {
+    background-color: rgb(203,234,255);
+}
+
+#panel2 {
+    background-color: rgb(203,234,255);
+}
+
+.panel > p {
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .points {
+        padding: 5px 10px;
+    }
+    .accordion {
+        font-size: 20px;
+    }
+    .panel > p {
+        font-size: 18px;
+        padding: 5px 2px;
+    }
+}
+
+.twitter-amour {
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    color: rgb(105,105,105);
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    footer > h5 {
+        font-size: 15px;
+    }
+}
+
+#distance {
+    background-color: black;
+    margin: 0 10px;
+    overflow: auto;
+    text-align: center;
+    opacity: 0.6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 2px 5px;
+    display: none;
+}
+
+#cross {
+    float: right;
+    top: 0px;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 8px;
+    margin: auto;
+}
+
+#distance-content {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    line-height: 90%;
+}
+
+#covid-map {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media only screen and (max-width:1000px) {
+    #distance-content {
+        font-size: 17px;
+    }
+    #covid-map {
+        font-size: 18px;
+    }
+}
+
+#covid-map > button {
+    color: cyan;
+    padding: 0;
+}
+
+#chart {
+    position: relative;
+    top: -10px;
+}
+
+.path-region {
+    stroke: rgb(133, 85, 85);
+    stroke-width: 2px;
+}
+
+#district-info {
+    position: relative;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#gap {
+    display: block;
+}
+
+@media only screen and (max-width:650px) {
+    #gap {
+        display: none;
+    }
+}
